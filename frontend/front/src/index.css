@@ -2,9 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #F4F2EF;
+    overflow-x: hidden;
+}
+
+.topo{
+    position: fixed; /* Fixa a posição */
+    top: 0;           /* Alinha ao topo */
+    left: 0;          /* Alinha à esquerda (opcional) */
+    width: 100vw;      /* Ocupa toda a largura da tela */
+    background-color: #fff; /* Cor de fundo opcional */
+    z-index: 1000;    /* Garante que fique acima de outros elementos */
 }

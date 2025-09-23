@@ -1,0 +1,222 @@
+.container-DetalhesLivro {
+    background: #ffffff;
+}
+
+.container-DetalhesLivro .detalhesLivroContent {
+    padding: 0px 4vw;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral{
+    display: flex;
+    justify-content: start;
+}
+
+.container-DetalhesLivro .detalhesLivroContent h2, h3 {
+   color: #213E60;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral .dados{
+    padding: 0 5vw;
+    width: 50vw;
+    margin-left: 2vw;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral figure{
+    margin: 0px;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral figure img{
+    height: 100%;
+    max-height: 30vw;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .conteudoLivro{
+    background-color: #ffffff;
+}
+
+.container-DetalhesLivro .detalhesLivroContent button{
+    background: #FFB363;
+    
+
+    color: #2E2E2E;
+
+    font-weight: 600;
+    font-size: 1rem;
+
+    width: 20vw;
+    height: 3vw;
+
+    border-color: #EB973E;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+}
+
+.container-DetalhesLivro .detalhesLivroContent button:hover{
+    cursor: pointer;
+}
+
+
+/* //////////////////////////////// */
+
+.container-DetalhesLivro .container-livros h3{
+    font-size: 2em;
+    width: 60vw;
+    text-align: center;
+}
+
+.container-DetalhesLivro .container-livros .visite-paragraph{
+    font-size: 1.2em;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.container-DetalhesLivro .container-livros{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container-DetalhesLivro .container-livros .livros{
+    width: 100vw;
+    display: flex;
+    
+}
+
+.container-DetalhesLivro .container-livros .livros .pequeno{
+    scale: 0.8;
+}
+
+.container-DetalhesLivro .container-livros .livros .pequeno:hover{
+    scale: 0.9;
+}
+
+.container-DetalhesLivro .container-livros .livros .pequeno p{
+    font-size: 1.5rem;
+    
+}
+
+.container-DetalhesLivro .container-livros .livros .pequeno a{
+    font-size: 1.5rem;
+    
+}
+
+.container-DetalhesLivro .container-livros button{
+    width: 30vw;
+    height: 6vw;
+
+    font-size: 1.5rem;
+
+    border-radius: 1.5vw;
+}
+
+
+@media (max-width: 480px) {
+
+    .container-DetalhesLivro .visaoGeral{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-DetalhesLivro .visaoGeral figure img{
+        height: 50vh !important;
+        max-height: 100vh !important;
+    }
+
+    .container-DetalhesLivro .detalhesLivroContent .visaoGeral .dados{
+        padding: 0 5vw;
+        width: 80vw;
+        margin-left: 2vw;
+    }
+
+    .container-DetalhesLivro .detalhesLivroContent .visaoGeral .dados h1{
+        text-align: center;
+    }
+
+    .container-DetalhesLivro .detalhesLivroContent button{
+        background: #FFB363;
+
+        color: #2E2E2E;
+
+        font-weight: 600;
+        font-size: 1rem;
+
+        width: 80vw;
+        height: 10vw;
+
+        border-color: #EB973E;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 12px;
+    }
+
+    .container-DetalhesLivro .container-livros .livros{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-DetalhesLivro .container-livros .livros .pequeno{
+        scale: 1 !important;
+        width: 70vw;
+        
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container-DetalhesLivro .visaoGeral{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-DetalhesLivro .visaoGeral figure img{
+        height: 50vh !important;
+        max-height: 100vh !important;
+    }
+
+    .container-DetalhesLivro .detalhesLivroContent .visaoGeral .dados{
+        padding: 0 5vw;
+        width: 80vw;
+        margin-left: 2vw;
+    }
+
+    .container-DetalhesLivro .detalhesLivroContent .visaoGeral .dados h1{
+        text-align: center;
+    }
+
+    .container-DetalhesLivro .detalhesLivroContent button{
+        background: #FFB363;
+
+        color: #2E2E2E;
+
+        font-weight: 600;
+        font-size: 1rem;
+
+        width: 80vw;
+        height: 10vw;
+
+        border-color: #EB973E;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 12px;
+    }
+
+    .container-DetalhesLivro .container-livros .livros{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-DetalhesLivro .container-livros .livros .pequeno{
+        scale: 1 !important;
+        width: 70vw;
+        
+    }
+
+}

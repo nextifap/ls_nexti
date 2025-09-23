@@ -1,0 +1,89 @@
+.SubmeterMaterialContent {
+   padding: 2vw 3vw;
+}
+
+.SubmeterMaterialContent h1{
+   font-size: 3.5vw;
+   font-weight: 400;
+
+   color: #2E2E2E;
+}
+
+
+.SubmeterMaterialContent h2{
+   font-size: 3.5vw;
+   font-weight: bold;
+
+   color: #213E60;
+}
+
+.SubmeterMaterialContent h3{
+   font-size: 3.5vw;
+   font-weight: 400;
+
+   color: #2E2E2E;
+}
+
+.SubmeterMaterialContent p{
+   font-size: 1.4vw;
+   font-weight: 500;
+
+   color: #2E2E2E;
+}
+
+.SubmeterMaterialContent ul li{
+   font-size: 1.4vw;
+   font-weight: 500;
+
+   color: #565A61;
+}
+.SubmeterMaterialContent ol li{
+   font-size: 1.4vw;
+   font-weight: 500;
+
+   color: #565A61;
+}
+
+
+.SubmeterMaterialContent .ulExterno ul li{
+      color: #565A61;
+}
+
+.SubmeterMaterialContent .ulExterno ol li{
+      color: #565A61;
+}
+
+.SubmeterMaterialContent .ulExterno li{
+      color: #2E2E2E;
+}
+
+.SubmeterMaterialContent a{
+      color: #176ac8;
+}
+
+@media (max-width: 768px) {
+
+   .SubmeterMaterialContent h1{
+      font-size: 6vw;
+   }
+
+
+   .SubmeterMaterialContent h2{
+      font-size: 6vw;
+   }
+
+   .SubmeterMaterialContent h3{
+      font-size: 6vw;
+   }
+
+   .SubmeterMaterialContent p{
+      font-size: 3vw;
+   }
+
+   .SubmeterMaterialContent ul li{
+      font-size: 3vw;
+   }
+   .SubmeterMaterialContent ol li{
+      font-size: 3vw;
+   }
+}

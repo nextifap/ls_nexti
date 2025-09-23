@@ -5,25 +5,69 @@ nav ul {
     list-style-type: none;
 
     width: 100vw;
-    
 }
 
 
 nav a{
     color: white;
     text-decoration: none;
+    font-size: 1.5vw;
+
+    transition: 0.5s;
 }
 
 nav a:hover{
     color: #EB973E;
+    scale: 1.1;
+    
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    
 
     background: #213E60;
 
-    height: 64px;
+    height: 5.8vw;
+
+}
+
+@media (max-width: 420px) {
+
+    nav a{
+        font-size: 4vw;
+    }
+
+    nav {
+        height: 10vw;
+
+    }
+
+}
+
+@media (min-width: 421px ) and (max-width: 480px) {
+
+    nav a{
+        font-size: 3vw;
+    }
+
+    nav {
+        height: 8vw;
+    
+
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav a{
+        font-size: 2.5vw;
+    }
+
+    nav {
+        height: 8vw;
+    }
+
 }

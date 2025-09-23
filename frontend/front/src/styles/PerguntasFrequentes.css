@@ -1,15 +1,16 @@
-.container-perguntas {
+.perguntasContent {
     display: flex;
     justify-content: space-around;
-    padding: 50px 100px;
+    padding: 50px 50px;
 
 }
 
-.container-perguntas img{
-    width: 40%
+.perguntasContent img{
+    width: 35vw;
+    height: auto;
 }
 
-.container-perguntas div     {
+.perguntasContent div     {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,15 +18,17 @@
     justify-content: center;
 }
 
-.container-perguntas select{
+.perguntasContent select{
     width: 40vw;
     height: 5vw;
-    color: black;
+    color: #213E60;
     border-color: #4C86AD;
-    border-radius: 16px;
+    border-radius: 1vw;
 
-    font-size: 1rem;
+    outline: none;
+    box-shadow: none;
+
+    font-size: 1.5vw;
 
     padding: 0px 15px;
 }
-

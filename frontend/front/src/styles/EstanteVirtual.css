@@ -1,31 +1,58 @@
-.container-servicos h2{
-    color: #213E60;
-    font-size: 36px;
-    font-weight: bold;
-    
+.container-estante body{
+    background-color: #F4F2EF;
 }
 
-.container-servicos h3{
-    margin-top: -5px;
+.container-estante {
+    display: flex;
+
+    margin-top: 2vw;
+}
+.container-estante .bigPicture {
+    background: #ffffff;
+    width: 80vw;
+    padding: 2vw 2vw;
+
+    border-radius: 1vw;
+
+    margin: 0vw 2vw 2vw 2vw;
+
 }
 
-.container-servicos h3 a{
-    color: #213E60;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+.container-estante .estanteContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-servicos .autores{
-    color: #2E2E2E;
-    margin-top: -40px;
+
+.container-estante .line {
+    display: flex;
+    justify-content: start;
+
+    padding: 20px 0px;
+
+    flex-wrap: wrap;
 }
 
-.container-servicos p a{
-    text-decoration: none;
-    font-weight: 400;
+.container-estante .pequeno{
+    scale: 1 !important;
+    margin-right: 1%;
+    margin-bottom: 5%;
 }
 
-.container-servicos .doi{
-    font-weight: bold;
+.container-estante{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 780px) {
+    .container-estante .line{
+        justify-content: space-between;
+
+    }
+
+    .container-estante .pequeno{
+        margin-right: 0px;
+    }
 }

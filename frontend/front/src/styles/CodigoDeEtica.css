@@ -14,5 +14,47 @@
 
 .container-codigo h2{
     color: #213E60;
+    font-size: 4vw;
+}
+
+.container-codigo p {
+    font-size: 1.3vw;
+}
+.container-codigo ul li {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #565A61;
+
+}
+
+@media (max-width: 480px) {
+
+    .container-codigo h2{
+        font-size: 4.8vw;
+    }
+
+    .container-codigo p {
+        font-size: 3.2vw;
+    }
+
+    .container-codigo ul li {
+        font-size: 3.4vw;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container-codigo h2{
+        font-size: 4.8vw;
+    }
+
+    .container-codigo p {
+        font-size: 3.2vw;
+    }
+
+    .container-codigo ul li {
+        font-size: 3.4vw;
+    }
 }
 

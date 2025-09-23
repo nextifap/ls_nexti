@@ -1,11 +1,7 @@
 import './styles.css'
 import { Link } from "react-router-dom";
 
-const livros = [
-    { id: 1, titulo: "The Light Beyond The Garden Wall", autor: "Fulano1" },
-    { id: 2, titulo: "Soul", autor: "Fulano2" },
-    { id: 3, titulo: "The Book of Art", autor: "Fulano3" },
-];
+import { livros } from "../../data/ListaLivros";
 
 export function Livro ({ capa, nome, className, livroId}) {
 
@@ -15,11 +11,17 @@ export function Livro ({ capa, nome, className, livroId}) {
         return <p>Livro não encontrado.</p>;
     }
 
+    function Subir() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     return (
-        <div className={`container-livro ${className || ''}`}>
+        <Link className={`container-livro ${className || ''}`} to={`/livro/${livro.id}`} onClick={Subir()}>     
             <img src={capa} alt="" />
             <p>{nome}</p>
-            <Link to={`/livro/${livro.id}`}>Saiba Mais</Link>
-        </div>            
+            <Link to={`/livro/${livro.id}`} className='ancoragem'>Saiba Mais</Link>
+        </Link>
+                   
     );
 }
+

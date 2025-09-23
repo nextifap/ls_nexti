@@ -1,63 +1,279 @@
 footer{
     color: #fff;
-    padding: 50px 50px;
+    padding: 1.8vw 3vw;
+
+    max-width: 100vw;;
 }
 
-footer .content{
+footer .footerContent{
     display: flex;
+    align-items: start;
 }
 
-.contact {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+
+.navigations a{
+        color: inherit;         /* herda a cor do texto do elemento pai */
+        text-decoration: none;  /* remove o sublinhado */
+        cursor: pointer;        /* mantém o cursor de link */
+        list-style: none;
 }
 
-.info {
+.footerContent .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 
+footer p{
+    font-size: 1.2vw;
+}
 
-figure{
+
+
+footer figure{
     display: flex;
-    justify-content: space-between;
-    width: 240px;
-
+    justify-content: end;
+    gap: 1vw;
     margin-left: 0;
 }
 
-.info figure img{
-    width: 48px;
+.footerContent .info figure img{
+    width: 2.5vw;
 }
 
-footer ul li{
+
+.footerContent ul li{
     list-style-type: none;
-    font-size: 17px;
+    font-size: 1.2vw;
 
     margin-bottom: 10px;
+
+    transition: 0.2s;
 }
 
-footer ul{
+.footerContent ul li:hover{
+    scale: 1.05;
+    color: #EB973E;
+
+}
+
+.footerContent ul{
     margin-left: 0;
     padding: 0;
 }
 
-.navigations{
+.footerContent .navigations{
     display: flex;
     justify-content: space-between;
 
-    width: 800px;
+    width: 70vw;
 }
 
-footer .Logo{
-    margin-bottom: 20px;
+footer .footerContent .Logo{
+    margin-top: 1.5vw;
+    margin-bottom: 10vw ;
+    margin-right: 6vw ;
+    width: 12vw;
 }
 
-footer h4{
-    margin-bottom: 20px;
-    font-size: 21px;
+footer .footerContent h4{
+    margin-bottom: 1.5vw;
+    font-size: 1.5vw;
+}
+
+footer .socialmedia img{
+    width: 3vw;
+}
+
+footer .socialmedia{
+    display: flex;
+    justify-content: start;
+}
+
+footer .esquerda ul .icon{
+    transition: transform 0.3s, fill 0.3s;
+    fill: white;
+    transform: scale(0.8);
+}
+
+footer .esquerda ul .icon:hover{
+    fill: orange;
+    transform: scale(0.9);
+}
+
+@media (max-width: 480px) {
+
+    footer{
+        max-width: 100vw;;
+    }
+
+    footer .footerContent{
+        flex-direction: column;
+    }
+    .footerContent .contact {
+        display: flex;
+        margin-top: 1.20vw;
+        margin-bottom: 1.20vw;
+    }
+    .footerContent .contact img{
+        width: 5vw;
+    }
+
+    footer p{
+        font-size: 3vw;
+    }
+
+    footer figure{
+        display: flex;
+        justify-content: end;
+        gap: 1vw;
+        margin-left: 0;
+    }
+
+    .footerContent .info img{
+        width: 10vw;
+    }
+
+    .footerContent .info{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerContent ul{
+        margin-right: 0px;
+    }
+
+    .footerContent ul li{
+        font-size: 3vw;
+        width: 40vw;
+
+        margin-bottom: 20px;
+    }
+
+    .footerContent .navigations{
+        flex-wrap: wrap;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .footerContent .Logo{
+        margin-top: 1.5vw;
+        margin-bottom: 10vw ;
+        margin-right: 6vw ;
+        width: 12vw;
+    }
+
+    footer .footerContent h4{
+        margin-bottom: 1.5vw;
+        font-size: 3.5vw;
+    }
+
+    footer .socialmedia img{
+        width: 6vw;
+
+    }
+
+    footer .footerContent .esquerda{
+        text-align: right;
+    }
+
+    footer .footerContent .esquerda .socialmedia{
+
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 40vw; 
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    footer{
+        max-width: 100vw;;
+    }
+
+    footer .footerContent{
+        flex-direction: column;
+    }
+    .footerContent .contact {
+        display: flex;
+        margin-top: 1.20vw;
+        margin-bottom: 1.20vw;
+    }
+    .footerContent .contact img{
+        width: 5vw;
+    }
+
+    footer p{
+        font-size: 3vw;
+    }
+
+    footer figure{
+        display: flex;
+        justify-content: end;
+        gap: 1vw;
+        margin-left: 0;
+    }
+
+    .footerContent .info img{
+        width: 10vw;
+    }
+
+    .footerContent .info{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerContent ul{
+        margin-right: 0px;
+    }
+
+    .footerContent ul li{
+        font-size: 3vw;
+        width: 40vw;
+
+        margin-bottom: 20px;
+    }
+
+    .footerContent .navigations{
+        flex-wrap: wrap;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .footerContent .Logo{
+        margin-top: 1.5vw;
+        margin-bottom: 10vw ;
+        margin-right: 6vw ;
+        width: 12vw;
+    }
+
+    footer .footerContent h4{
+        margin-bottom: 1.5vw;
+        font-size: 3.5vw;
+    }
+
+    footer .socialmedia img{
+        width: 6vw;
+    }
+
+    footer .footerContent .esquerda{
+        text-align: right;
+    }
+
+    footer .footerContent .esquerda .socialmedia{
+
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 40vw; 
+    }
 }

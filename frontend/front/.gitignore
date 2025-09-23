@@ -12,6 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Evita PDFs e arquivos grandes em geral
+# *.pdf
+# *.zip
+# *.rar
+# *.mp4
+# *.mov
+# *.avi
+# *.iso
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
