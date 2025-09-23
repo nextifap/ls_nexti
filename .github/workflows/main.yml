@@ -1,0 +1,67 @@
+name: Build and Deploy Static Files
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/main.yml'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: frontend/front/package-lock.json
+        
+    - name: Install dependencies
+      run: |
+        cd frontend/front
+        npm ci
+        
+    - name: Build frontend
+      run: |
+        cd frontend/front
+        npm run build
+        
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+    - name: Clean existing dist files
+      run: |
+        # Remove arquivos antigos do build (exceto .git, node_modules e frontend)
+        find . -maxdepth 1 -name "*.html" -delete
+        find . -maxdepth 1 -name "*.js" -delete
+        find . -maxdepth 1 -name "*.css" -delete
+        find . -maxdepth 1 -name "assets" -type d -exec rm -rf {} + 2>/dev/null || true
+        find . -maxdepth 1 -name "*.png" -delete
+        find . -maxdepth 1 -name "*.svg" -delete
+        
+    - name: Copy built files to root
+      run: |
+        # Copia os arquivos do build para a raiz do projeto
+        cp -r frontend/front/dist/* ./
+        
+    - name: Commit and push changes
+      run: |
+        git add .
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Deploy: Update static files from build [skip ci]"
+          git push
+        fi

@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 
 import ImgCorpoEditorial from '../assets/img/img-editorial.svg'
 
-import ImgLivro1 from "../assets/img/capasLivros/algoritmos_dados.jpg"
-import ImgLivro2 from "../assets/img/capasLivros/logicaProgramacao.png"
-import ImgLivro3 from "../assets/img/capasLivros/Paradigmas_programacao.png"
+import ImgLivro1 from "../assets/img/capasLivros/Coletânea_HQs.png"
+import ImgLivro2 from "../assets/img/capasLivros/Ebook_Formação_em_Saúde_experiencias_docentes_e_discentes.png"
+import ImgLivro3 from "../assets/img/capasLivros/GUIA_PESCE.png"
 
 import ScrollToTop from "../features/ScrollTop";
 
@@ -23,6 +23,8 @@ import ImgPerfil3 from '../assets/img/fotosPerfil/fotoPerfil3.jpeg'
 import ImgPerfil4 from '../assets/img/fotosPerfil/fotoPerfil4.jpeg'
 import ImgPerfil5 from '../assets/img/fotosPerfil/fotoPerfil5.jpeg'
 import ImgPerfil6 from '../assets/img/fotosPerfil/fotoPerfil6.jpeg'
+
+
 
 function Home () {
 
@@ -88,9 +90,9 @@ function Home () {
                   <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
                   <p className="visite-paragraph">Descubra uma seleção especial de livros e materiais gratuitos para impulsionar seus estudos em tecnologia e programação. Explore conteúdos feitos por especialistas e desenvolva seu aprendizado no seu ritmo.</p>
                   <div className="livros">
-                      <Livro className="pequeno" capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
-                      <Livro className="pequeno" capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
-                      <Livro className="pequeno" capa={ImgLivro3} nome={'Paradigmas de programação: Uma introdução'} livroId={3}/>
+                      <Livro className="pequeno" capa={ImgLivro1} nome={'Minha vida saudável'} livroId={1}/>
+                      <Livro className="pequeno" capa={ImgLivro2} nome={'Formação em saúde'} livroId={2}/>
+                      <Livro className="pequeno" capa={ImgLivro3} nome={'Guia de práticas educativas'} livroId={3}/>
                   </div>
 
                   <Link to={"/estante-virtual"}><button>Outros títulos</button></Link>
@@ -129,6 +131,8 @@ function Home () {
             </div>
             
             <Footer />
+
+            <ScrollToTop showButton />
         </div>
     )
 }

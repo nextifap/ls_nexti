@@ -33,9 +33,7 @@
     font-size: 1.2vw;
     font-weight: 500;
     color: #565A61;
-    
 }
-
 
 .homeContent .container-livros .visite-paragraph {
     max-width: 50vw;
@@ -72,8 +70,6 @@
     padding-left: 20vw;
     margin: 0;
 }
-
-
 
 .homeContent .container-recomendacoes {
     background-color: rgba(233, 233, 233, 1);
@@ -117,7 +113,6 @@
     flex-direction: center;
     white-space: normal; /* Permite quebra de linha dentro dos cards */
 }
-
 
 .homeContent .recomendacoes-title{
     font-size: 1.9vw;
@@ -210,7 +205,6 @@
     align-items: center;
 }
 
-
 .homeContent .container-livros p{
     text-align: center;
 }
@@ -241,8 +235,9 @@
     width: 80vw;
 }
 
-@media (max-width: 360px) {
+/* -------- MEDIA QUERIES -------- */
 
+@media (max-width: 360px) {
     .homeContent .Banner{
         height: 100vw; /* Altura do banner */
         background-position: -300px;
@@ -265,7 +260,6 @@
     .homeContent .Banner button{
         width: 30vw;
         height: 6vw;
-
         font-size: 0.6em;
         padding: 0;
     }
@@ -281,7 +275,6 @@
     .homeContent .container-editorial-section button{
         width: 30vw;
         height: 6vw;
-
         font-size: 0.6em;
         padding: 0;
     }
@@ -310,15 +303,12 @@
 
     .homeContent .container-livros{
         width: 100vw;
-        
     }
 
     .homeContent .container-livros button{
         width: 50vw;
         height: 8vw;
-
         font-size: 2.5vw;
-
         border-radius: 3vw;
     }
 
@@ -332,10 +322,8 @@
     }
 
     .homeContent .cards-recomendacoes > * {
-    
         min-width: 60vw;
         max-width: 60vw;
-        
         padding: 4vw;
         border-radius: 1vw;
     }
@@ -344,11 +332,9 @@
         width: 80vw;
         max-width: 80vw;
     }
-
 }
 
 @media (min-width: 361px) and (max-width: 560px){
-
     .homeContent .Banner{
         height: 80vw; /* Altura do banner */
         background-position: -330px;
@@ -370,7 +356,6 @@
     .homeContent .Banner button{
         width: 30vw;
         height: 6vw;
-
         font-size: 0.6em;
         padding: 0;
     }
@@ -386,7 +371,6 @@
     .homeContent .container-editorial-section button{
         width: 30vw;
         height: 6vw;
-
         font-size: 0.6em;
         padding: 0;
     }
@@ -415,15 +399,12 @@
 
     .homeContent .container-livros{
         width: 100vw;
-        
     }
 
     .homeContent .container-livros button{
         width: 50vw;
         height: 8vw;
-
         font-size: 2.5vw;
-
         border-radius: 3vw;
     }
 
@@ -437,10 +418,8 @@
     }
 
     .homeContent .cards-recomendacoes > * {
-    
         min-width: 60vw;
         max-width: 60vw;
-        
         padding: 4vw;
         border-radius: 1vw;
     }
@@ -449,7 +428,6 @@
         width: 80vw;
         max-width: 80vw;
     }
-
 }
 
 @media (min-width: 561px) and (max-width: 724px) {
@@ -476,7 +454,6 @@
     .homeContent .Banner button{
         width: 30vw;
         height: 6vw;
-
         font-size: 1.2em;
         padding: 0;
     }
@@ -492,7 +469,6 @@
     .homeContent .container-editorial-section button{
         width: 30vw;
         height: 6vw;
-
         font-size: 1.3em;
         padding: 0;
     }
@@ -525,15 +501,12 @@
 
     .homeContent .container-livros{
         width: 100vw;
-        
     }
 
     .homeContent .container-livros button{
         width: 50vw;
         height: 8vw;
-
         font-size: 2.5vw;
-
         border-radius: 3vw;
     }
 
@@ -547,10 +520,8 @@
     }
 
     .homeContent .cards-recomendacoes > * {
-    
         min-width: 60vw;
         max-width: 60vw;
-        
         padding: 4vw;
         border-radius: 1vw;
     }
@@ -559,7 +530,6 @@
         width: 80vw;
         max-width: 80vw;
     }
-    
 }
 
 @media (min-width: 725px) and (max-width: 891px) {
@@ -584,7 +554,6 @@
     .homeContent .Banner button{
         width: 30vw;
         height: 6vw;
-
         font-size: 1.2em;
         padding: 0;
     }
@@ -600,7 +569,6 @@
     .homeContent .container-editorial-section button{
         width: 30vw;
         height: 6vw;
-
         font-size: 1.3em;
         padding: 0;
     }
@@ -633,15 +601,12 @@
 
     .homeContent .container-livros{
         width: 100vw;
-        
     }
 
     .homeContent .container-livros button{
         width: 50vw;
         height: 8vw;
-
         font-size: 2.5vw;
-
         border-radius: 3vw;
     }
 
@@ -655,10 +620,8 @@
     }
 
     .homeContent .cards-recomendacoes > * {
-    
         min-width: 60vw;
         max-width: 60vw;
-        
         padding: 4vw;
         border-radius: 1vw;
     }
@@ -667,5 +630,4 @@
         width: 80vw;
         max-width: 80vw;
     }
-    
 }

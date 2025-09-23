@@ -29,6 +29,10 @@ footer p{
     font-size: 1.2vw;
 }
 
+footer p a{
+    text-decoration: none;
+    color: #fff;
+}
 
 
 footer figure{

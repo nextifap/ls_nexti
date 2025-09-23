@@ -1,66 +1,155 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# NExTI - Editora Digital
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📚 Sobre o Projeto
 
-## About Laravel
+O **NExTI** é uma plataforma digital de editora que oferece uma estante virtual de livros e materiais educacionais gratuitos, com foco em tecnologia, programação e saúde. A plataforma permite aos usuários explorar, ler online e submeter materiais para publicação.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### ✨ Funcionalidades Principais
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Estante Virtual**: Catálogo digital com livros e materiais educacionais
+- **Leitura Online**: Visualização de PDFs diretamente na plataforma
+- **Submissão de Materiais**: Sistema para autores submeterem seus trabalhos
+- **Corpo Editorial**: Informações sobre a equipe editorial
+- **FAQ e Suporte**: Perguntas frequentes e sistema de reporte de bugs
+- **Design Responsivo**: Interface moderna e adaptável a diferentes dispositivos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Tecnologias Utilizadas
 
-## Learning Laravel
+### Frontend
+- **React 18** - Biblioteca JavaScript para construção de interfaces
+- **React Router DOM** - Roteamento da aplicação
+- **React Icons** - Biblioteca de ícones
+- **Tailwind CSS** - Framework CSS utilitário
+- **Vite** - Build tool e servidor de desenvolvimento
+- **SweetAlert2** - Biblioteca para alertas e modais
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Backend
+- **Flask** - Framework Python para API
+- **Flask-CORS** - Middleware para Cross-Origin Resource Sharing
+- **Requests** - Biblioteca para requisições HTTP
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Ferramentas de Desenvolvimento
+- **ESLint** - Linter para JavaScript/React
+- **PostCSS** - Processador CSS
+- **Autoprefixer** - Plugin PostCSS para prefixos CSS
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📁 Estrutura do Projeto
 
-## Laravel Sponsors
+```
+ls_nexti/
+├── backend/
+│   └── app.py                 # API Flask para reporte de bugs
+├── frontend/
+│   └── front/
+│       ├── src/
+│       │   ├── components/    # Componentes React reutilizáveis
+│       │   ├── pages/         # Páginas da aplicação
+│       │   ├── styles/        # Arquivos CSS específicos
+│       │   ├── assets/        # Imagens, PDFs e outros recursos
+│       │   ├── data/          # Dados estáticos (lista de livros)
+│       │   └── features/      # Funcionalidades específicas
+│       ├── public/            # Arquivos públicos
+│       └── package.json       # Dependências do frontend
+├── package.json               # Dependências do projeto principal
+└── README.md                  # Este arquivo
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Como Executar o Projeto
 
-### Premium Partners
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- Python 3.8 ou superior
+- npm ou yarn
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Instalação e Execução
 
-## Contributing
+1. **Clone o repositório**
+   ```bash
+   git clone [URL_DO_REPOSITORIO]
+   cd ls_nexti
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Instale as dependências do frontend**
+   ```bash
+   cd frontend/front
+   npm install
+   ```
 
-## Code of Conduct
+3. **Instale as dependências do backend**
+   ```bash
+   cd ../../backend
+   pip install flask flask-cors requests
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Execute o backend**
+   ```bash
+   python app.py
+   ```
+   O servidor Flask estará rodando em `http://localhost:5000`
 
-## Security Vulnerabilities
+5. **Execute o frontend**
+   ```bash
+   cd ../frontend/front
+   npm run dev
+   ```
+   A aplicação React estará disponível em `http://localhost:5173`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📖 Páginas Disponíveis
 
-## License
+- **Home** (`/`) - Página inicial com banner e livros em destaque
+- **Sobre Nós** (`/sobre-nos`) - Informações sobre a editora
+- **Corpo Editorial** (`/corpo-editorial`) - Equipe editorial
+- **Nossos Serviços** (`/nossos-servicos`) - Serviços oferecidos
+- **Estante Virtual** (`/estante-virtual`) - Catálogo completo de livros
+- **Ler Online** (`/ler-online/:id`) - Visualizador de PDF
+- **Detalhes do Livro** (`/livro/:id`) - Informações detalhadas do livro
+- **Submeter Material** (`/submeter-material`) - Formulário para submissão
+- **Perguntas Frequentes** (`/perguntas-frequentes`) - FAQ
+- **Código de Ética** (`/codigo-de-etica`) - Diretrizes éticas
+- **Política de Privacidade** (`/politica-de-privacidade`) - Termos de privacidade
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📚 Livros Disponíveis
+
+A plataforma atualmente oferece os seguintes títulos:
+
+1. **Minha vida saudável** - Coletânea de HQs
+2. **Formação em saúde** - Experiências docentes e discentes
+3. **Guia de práticas educativas** - GUIA PESCE
+4. **Como pensar e desenvolver softwares** - Crescimento sustentável e escalável
+5. **Formação em enfermagem e educação em saúde** - Experiências exitosas
+6. **Saberes e práticas da enfermagem** - Contexto da programação da saúde do trabalhador
+7. **Assistência e Saúde** - Materiais educacionais
+
+## 🔧 Scripts Disponíveis
+
+### Frontend
+```bash
+npm run dev      # Inicia o servidor de desenvolvimento
+npm run build    # Gera build de produção
+npm run lint     # Executa o linter
+npm run preview  # Visualiza o build de produção
+```
+
+## 🐛 Reporte de Bugs
+
+O sistema possui integração com Discord para reporte de bugs. A API está configurada para enviar notificações automáticas para um canal específico quando bugs são reportados.
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença [INSERIR TIPO DE LICENÇA]. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 📞 Contato
+
+Para dúvidas ou suporte, entre em contato através dos canais disponíveis na plataforma.
+
+---
+
+**NExTI** - Transformando a educação através da tecnologia 📚✨

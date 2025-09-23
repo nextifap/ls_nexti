@@ -8,6 +8,7 @@ html, body {
     font-family: 'Work Sans', sans-serif;
     background-color: #F4F2EF;
     overflow-x: hidden;
+    text-align: justify;
 }
 
 .topo{

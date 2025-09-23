@@ -7,9 +7,9 @@ import { Navigation } from "../../src/components/navigation/index";
 import { TitlePage } from "../../src/components/title-page/index";
 
 
-import ImgLivro1 from "../assets/img/capasLivros/algoritmos_dados.jpg"
-import ImgLivro2 from "../assets/img/capasLivros/logicaProgramacao.png"
-import ImgLivro3 from "../assets/img/capasLivros/Paradigmas_programacao.png"
+import ImgLivro1 from "../assets/img/capasLivros/Coletânea_HQs.png"
+import ImgLivro2 from "../assets/img/capasLivros/Ebook_Formação_em_Saúde_experiencias_docentes_e_discentes.png"
+import ImgLivro3 from "../assets/img/capasLivros/GUIA_PESCE.png"
 
 import { Livro } from "../components/livro";
 
