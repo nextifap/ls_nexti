@@ -95,13 +95,13 @@ export const livros = [
 ];
 
 /*
-{ id: 5,
+{ id: ,
     titulo: "",
     autor: "",
     doi: "",
     descricao: "",
-    capa: capa4,
-    pdf: pdf4,
+    capa: capa,
+    pdf: pdf,
 
     },
 ];
