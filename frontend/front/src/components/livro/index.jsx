@@ -1,10 +1,8 @@
 import './styles.css'
 import { Link } from "react-router-dom";
-
 import { livros } from "../../data/ListaLivros";
 
-export function Livro ({ capa, nome, className, livroId}) {
-
+export function Livro({ className, livroId }) {
     const livro = livros.find((liv) => liv.id === livroId);
 
     if (!livro) {
@@ -16,12 +14,14 @@ export function Livro ({ capa, nome, className, livroId}) {
     }
 
     return (
-        <Link className={`container-livro ${className || ''}`} to={`/livro/${livro.id}`} onClick={Subir()}>     
-            <img src={capa} alt="" />
-            <p>{nome}</p>
-            <Link to={`/livro/${livro.id}`} className='ancoragem'>Saiba Mais</Link>
+        <Link 
+            className={`container-livro ${className || ''}`} 
+            to={`/livro/${livro.id}`} 
+            onClick={Subir}
+        >     
+            <img src={livro.capa} alt={`Capa do livro ${livro.titulo}`} />
+            <p>{livro.titulo}</p>
+            <span className='ancoragem'>Saiba Mais</span>
         </Link>
-                   
     );
 }
-
