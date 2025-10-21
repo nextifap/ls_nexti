@@ -32,12 +32,10 @@ class Material extends Model
     }
 
     */
-
-    /*
+    
     // Relação com Category
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
-    */
 }
