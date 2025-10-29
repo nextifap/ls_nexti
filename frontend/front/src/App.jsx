@@ -9,6 +9,7 @@ import PerguntasFrequentes from './pages/PerguntasFrequentes';
 import EstanteVirtual from './pages/EstanteVirtual';
 import LerOnline from "./pages/LerOnline";
 import SubmeterMaterial from './pages/SubmeterMaterial';
+import CadastroDeLivro from './pages/CadastroDeLivro';
 
 import '../src/index.css'
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/politica-de-privacidade' element={<PoliticaDePrivacidade />} />
           <Route path='/perguntas-frequentes' element={<PerguntasFrequentes />} />
           <Route path='/submeter-material' element={<SubmeterMaterial />} />
+          <Route path='/cadastro-de-livro' element={<CadastroDeLivro />} />
 
           <Route path='/estante-virtual' element={<EstanteVirtual />} />
           <Route path="/livro/:id" element={<DetalhesLivro/>} />

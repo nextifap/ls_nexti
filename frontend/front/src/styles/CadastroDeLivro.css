@@ -1,0 +1,197 @@
+.container-cadastro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .form-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* GRID com duas colunas */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+    width: 100%;
+  }
+  
+  /* Campos grandes ocupam as duas colunas */
+  form .full {
+    grid-column: 1 / 3;
+  }
+  
+  label {
+    font-weight: 500;
+    color: #555;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea,
+  select {
+    padding: 14px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #007bff;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  /* Grupo de autores */
+  .autor-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .add-autor {
+    background-color: #1d2b53;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    width: 35px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-autor:hover {
+    background-color: #162040;
+  }
+  
+  /* Toggle público/privado */
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f7f7;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .toggle-label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .toggle-switch {
+    width: 50px;
+    height: 26px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .toggle-switch.on {
+    background-color: #4caf50;
+  }
+  
+  .toggle-circle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .toggle-switch.on .toggle-circle {
+    left: 27px;
+  }
+  
+  /* Botões centralizados no final */
+  .buttons {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  button {
+    flex: 1;
+    max-width: 180px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .voltar {
+    background-color: #1d2b53;
+  }
+  
+  .voltar:hover {
+    background-color: #162040;
+  }
+  
+  .enviar {
+    background-color: #f29f05;
+  }
+  
+  .enviar:hover {
+    background-color: #d68d04;
+  }
+  
+  /* Responsivo — volta para 1 coluna no celular */
+  @media (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+  
+    form .full {
+      grid-column: 1;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
