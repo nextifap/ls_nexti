@@ -9,9 +9,15 @@ return new class extends Migration {
     {
         Schema::create('livros', function (Blueprint $table) {
             $table->id();
+            $table->string('link_amazon')->nullable();
             $table->string('titulo');
             $table->string('autor');
-            $table->string('categoria');
+            $table->string('doi')->nullable();
+            $table->integer('numero_paginas')->nullable();
+            $table->string('categorias')->nullable();
+            $table->text('descricao')->nullable();
+            $table->string('tipo_documento')->nullable();
+            $table->boolean('visibilidade')->default(true); // público por padrão
             $table->string('capa_path')->nullable();
             $table->string('arquivo_path')->nullable();
             $table->timestamp('data_publicacao')->useCurrent();
@@ -25,4 +31,3 @@ return new class extends Migration {
         Schema::dropIfExists('livros');
     }
 };
-

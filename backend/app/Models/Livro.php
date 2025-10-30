@@ -10,9 +10,15 @@ class Livro extends Model
     use HasFactory;
 
     protected $fillable = [
+        'link_amazon',
         'titulo',
         'autor',
-        'categoria',
+        'doi',
+        'numero_paginas',
+        'categorias',
+        'descricao',
+        'tipo_documento',
+        'visibilidade',
         'capa_path',
         'arquivo_path',
         'data_publicacao',
