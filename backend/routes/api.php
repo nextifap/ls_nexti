@@ -4,12 +4,14 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\MaterialController;
+use App\Http\Controllers\LivroController;
 
 Route::get('/materiais', [MaterialController::class, 'index']);
 Route::get('/materiais/{id}', [MaterialController::class, 'show']);
 Route::post('/materiais', [MaterialController::class, 'store']);
 Route::put('/materiais/{id}', [MaterialController::class, 'update']);
 Route::delete('/materiais/{id}', [MaterialController::class, 'destroy']);
+Route::post('/livros', [LivroController::class, 'store']);
 
 Route::post('/reportar', function (Request $request) {
     // Validação dos campos
