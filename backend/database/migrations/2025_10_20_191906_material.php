@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('material', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('writer_id')->constrained('writers')->onDelete('cascade');
-            
-            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
+            //$table->foreignId('writer_id')->constrained('writers')->onDelete('cascade');
+            $table->string("writer");
+            $table->foreignId('category_id')->constrained('category')->onDelete('cascade');
 
             $table->string('title');
             $table->string('autor');
