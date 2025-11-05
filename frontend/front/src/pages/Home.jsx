@@ -7,7 +7,6 @@ import { Banner } from "../components/banner";
 import { Editorial } from "../components/editorial";
 import { RecomendacaoLivros } from "../components/recomendacaoLivros";
 
-import '../styles/Home.css'
 import { Link } from "react-router-dom";
 
 import ScrollToTop from "../features/ScrollTop";

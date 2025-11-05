@@ -26,9 +26,12 @@ export const livros = [
 
     { id: 1,
     titulo: "Minha vida saudável",
-    autor: "",
-    doi: "",
-    descricao: "",
+    autor: [
+            "Amanda Soares", 
+            "Lya Cavalcante"
+            ],
+    doi: "00.00000/ABC.0.0.0000",
+    descricao: "Este livro convida o leitor a mergulhar em uma jornada envolvente, repleta de descobertas, emoções e reflexões. Com uma narrativa cativante e personagens marcantes, a obra explora temas universais como amor, amizade, conflito e superação. Cada página revela novas perspectivas e desperta a curiosidade, conduzindo o leitor por uma experiência única que combina imaginação, sensibilidade e profundidade.",
     capa: capa1,
     pdf: pdf1,
 
@@ -36,18 +39,32 @@ export const livros = [
 
     { id: 2,
     titulo: "Formação em saúde",
-    autor: "",
-    doi: "10.11536/ABM.0.1.1124",
-    descricao: "",
+    autor: [
+            "Gislaine Alves de Oliveira",
+            "Samyra Paula Lustoza Xavier",
+            "Emanuélly Vieira Pereira",
+            "Joedna Cavalcante Pereira",
+            "Maria Tainara Pinheiro",
+            "Vanessa Silva Gaspar",
+            "Karla Correa Lima Miranda",
+            "Ana Virgínia de Melo Fialho"
+            ],
+    doi: "00.00000/ABC.0.0.0000",
+    descricao: "Este livro convida o leitor a mergulhar em uma jornada envolvente, repleta de descobertas, emoções e reflexões. Com uma narrativa cativante e personagens marcantes, a obra explora temas universais como amor, amizade, conflito e superação. Cada página revela novas perspectivas e desperta a curiosidade, conduzindo o leitor por uma experiência única que combina imaginação, sensibilidade e profundidade.",
     capa: capa2,
     pdf: pdf2,
     },
 
     { id: 3,
     titulo: "Guia de práticas educativas",
-    autor: "",
-    doi: "10.11536/ABM.0.1.1124",
-    descricao: "",
+    autor: [
+            "Samyra Paula Lustoza Xavier",
+            "Amanda Soares",
+            "Amanda Ferreira Lima",
+            "Bruna Vieira Pedrosa"
+            ],
+    doi: "00.00000/ABC.0.0.0000",
+    descricao: "Este livro convida o leitor a mergulhar em uma jornada envolvente, repleta de descobertas, emoções e reflexões. Com uma narrativa cativante e personagens marcantes, a obra explora temas universais como amor, amizade, conflito e superação. Cada página revela novas perspectivas e desperta a curiosidade, conduzindo o leitor por uma experiência única que combina imaginação, sensibilidade e profundidade.",
     capa: capa3,
     pdf: pdf3,
 
@@ -55,9 +72,22 @@ export const livros = [
 
     { id: 4,
     titulo: "Como pensar e desenvolver softwares para o crescimento sustentável e escalável",
-    autor: "",
-    doi: "10.11536/ABM.0.1.1124",
-    descricao: "",
+    autor: [
+                "Nikollas David Oliveira Rufino",
+                "Fabrício Carneiro Costa",
+                "Ítalo Gonçalves Luciano",
+                "Kauan Ribeiro Feijó Gondim",
+                "Lázaro Rytson da Silva Bezerra",
+                "Jonathan Tharles Ferreira de Oliveira",
+                "Laryssa Brilhante Pessoa",
+                "Jose Nathannael Cavalache de Alencar",
+                "Luiz Lopes de Alcântara",
+                "Antoni Demétrius Bezerra Batista",
+                "Emmanuel Soares Silva",
+                "Joely Sousa Silva"
+                ],
+    doi: "00.00000/ABC.0.0.0000",
+    descricao: "Este livro convida o leitor a mergulhar em uma jornada envolvente, repleta de descobertas, emoções e reflexões. Com uma narrativa cativante e personagens marcantes, a obra explora temas universais como amor, amizade, conflito e superação. Cada página revela novas perspectivas e desperta a curiosidade, conduzindo o leitor por uma experiência única que combina imaginação, sensibilidade e profundidade.",
     capa: capa4,
     pdf: pdf4,
 
@@ -65,9 +95,12 @@ export const livros = [
 
     { id: 5,
     titulo: "Formação em enfermagem e educação em saúde: Experiências exitosas",
-    autor: "",
-    doi: "",
-    descricao: "",
+    autor: [
+                "Samyra Paula Lustoza Xavier",
+                "Andreia Souza Cândido"
+                ],
+    doi: "00.00000/ABC.0.0.0000",
+    descricao: "Este livro convida o leitor a mergulhar em uma jornada envolvente, repleta de descobertas, emoções e reflexões. Com uma narrativa cativante e personagens marcantes, a obra explora temas universais como amor, amizade, conflito e superação. Cada página revela novas perspectivas e desperta a curiosidade, conduzindo o leitor por uma experiência única que combina imaginação, sensibilidade e profundidade.",
     capa: capa5,
     pdf: pdf5,
 
@@ -75,9 +108,12 @@ export const livros = [
 
     { id: 6,
     titulo: "Saberes e práticas da enfermagem no contexto da programação da saúde do trabalhador",
-    autor: "",
-    doi: "10.11536/ABM.0.1.1124",
-    descricao: "",
+    autor: [
+                "Samyra Paula Lustoza Xavier",
+                "Milena Teixeira Bertoldo"
+                ],
+    doi: "00.00000/ABC.0.0.0000",
+    descricao: "Este livro convida o leitor a mergulhar em uma jornada envolvente, repleta de descobertas, emoções e reflexões. Com uma narrativa cativante e personagens marcantes, a obra explora temas universais como amor, amizade, conflito e superação. Cada página revela novas perspectivas e desperta a curiosidade, conduzindo o leitor por uma experiência única que combina imaginação, sensibilidade e profundidade.",
     capa: capa6,
     pdf: pdf6,
 
@@ -85,9 +121,18 @@ export const livros = [
 
     { id: 7,
     titulo: "",
-    autor: "",
-    doi: "10.11536/ABM.0.1.1124",
-    descricao: "",
+    autor: [
+                "Gislaine Alves de Oliveira",
+                "Samyra Paula Lustoza Xavier",
+                "Emanuely Vieira Pereira",
+                "Joedna Cavalcante Pereira",
+                "Djair Oliveira Silva",
+                "Pablo Henrique Coêlho de Freitas",
+                "Karla Correa Lima Miranda",
+                "Ana Virginia de Melo Fialho"
+                ],
+    doi: "00.00000/ABC.0.0.0000",
+    descricao: "Este livro convida o leitor a mergulhar em uma jornada envolvente, repleta de descobertas, emoções e reflexões. Com uma narrativa cativante e personagens marcantes, a obra explora temas universais como amor, amizade, conflito e superação. Cada página revela novas perspectivas e desperta a curiosidade, conduzindo o leitor por uma experiência única que combina imaginação, sensibilidade e profundidade.",
     capa: capa7,
     pdf: pdf7,
 
