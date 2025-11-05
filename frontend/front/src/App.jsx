@@ -13,7 +13,7 @@ import SubmeterMaterial from './pages/SubmeterMaterial';
 import '../src/index.css'
 
 
-import DetalhesLivro from './pages/Detalhestest'
+import DetalhesLivro from './pages/DetalhesLivro'
 
 function App() {
 
