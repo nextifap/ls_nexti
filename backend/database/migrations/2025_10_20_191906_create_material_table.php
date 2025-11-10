@@ -11,21 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('material', function (Blueprint $table) {
+        Schema::create('materials', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('writer_id')->constrained('writers')->onDelete('cascade');
-            
-            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
+            //$table->foreignId('writer_id')->constrained('writers')->onDelete('cascade');
+            $table->string("writer");
+
+            //$table->foreignId('category_id')->constrained('category')->onDelete('cascade');
+            $table->string("category");
 
             $table->string('title');
-            $table->string('autor');
             $table->string('doi');
             $table->text('description');
-            $table->text('publication_data');
+            $table->date('publication_data');
             $table->string('cover');
             $table->string('doc');
-            $table->integer('page_number');
+            $table->unsignedInteger('page_number');
             $table->string('type');
             $table->string('status');
             $table->timestamps();
@@ -38,6 +39,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('material');
+        Schema::dropIfExists('materials');
     }
 };

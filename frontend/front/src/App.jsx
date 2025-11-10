@@ -10,11 +10,10 @@ import EstanteVirtual from './pages/EstanteVirtual';
 import LerOnline from "./pages/LerOnline";
 import SubmeterMaterial from './pages/SubmeterMaterial';
 import CadastroDeLivro from './pages/CadastroDeLivro';
+import DetalhesLivro from './pages/DetalhesLivro';
 
-import '../src/index.css'
+import '../src/index.css';
 
-
-import DetalhesLivro from './pages/Detalhestest'
 
 function App() {
 
