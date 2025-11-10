@@ -2,18 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+//Para poder usar factory
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Material extends Model
 {
     use HasFactory;
 
+    //No protected $fillable vai ter todos os dados que vir do formulário
     protected $fillable = [
-        'writer_id',
-        'category_id',
+        'writer',
+        'category',
         'title',
-        'autor',
         'doi',
         'description',
         'publication_data',
@@ -23,19 +24,11 @@ class Material extends Model
         'type',
         'status',
     ];
-    
-    /*
-    // Relação com Writer
-    public function writer()
-    {
-        return $this->belongsTo(Writer::class);
-    }
 
-    */
-    
-    // Relação com Category
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
+    //Quando o laravel lê algo do banco de dados ele trata tudo como se fosse string. Então onde a gente vai precisar de algum tratamento ou mexer com dados que não sejam string, tem que fazer esse processo de transformar
+    protected $casts = [
+        'publication_data' => 'date',
+        'page_number' => 'integer',
+    ];
+
 }
