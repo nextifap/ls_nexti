@@ -12,10 +12,11 @@ export function RecomendacaoLivros () {
 
             <p className="md:w-[70%] w-full mb-10 mt-6 text-center md:text-2xl text-xl">Descubra uma seleção especial de livros e materiais gratuitos para impulsionar seus estudos em tecnologia e programação. Explore conteúdos feitos por especialistas e desenvolva seu aprendizado no seu ritmo.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 place-items-stretch">
                 <Livro livroId={1}/>
                 <Livro livroId={2}/>
                 <Livro livroId={3}/>
+                <Livro livroId={4}/>
             </div>
 
             <Link to={"/estante-virtual"}>
