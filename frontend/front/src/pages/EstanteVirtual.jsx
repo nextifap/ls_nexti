@@ -27,8 +27,7 @@ function EstanteVirtual() {
                         <div className="line">
                             {livros.map((livro) => (
                                 <Livro 
-                                    key={livro.id} 
-                                    className="pequeno" 
+                                    key={livro.id}  
                                     livroId={livro.id} 
                                 />
                             ))}

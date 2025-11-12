@@ -3,13 +3,13 @@ import ImgCorpoEditorial from '../../assets/img/img-editorial.svg'
 
 export function Editorial() {
     return (
-        <section className="flex md:items-center justify-between bg-[#f8f8f8] p-12 md:flex-row flex-col md:text-left text-center">
-            <div className="p-5 flex flex-col md:items-start items-center">
+        <section className="flex md:items-center justify-between bg-[#f8f8f8] md:p-12 p-8 md:flex-row flex-col md:text-left text-center">
+            <div className="p-5 flex flex-col md:items-start items-center md:w-[40%] w-full">
                 <h3 className="text-[#333] font-bold text-4xl">COMO PUBLICAR <br />
                     <span className="text-[#213E60] font-medium text-3xl">SEU LIVRO</span>
                 </h3>
 
-                <p className="mt-5">Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.</p>
+                <p className="mt-5 md:text-2xl text-xl">Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.</p>
 
                 <Link to={"/submeter-material"}>
                     <div className="relative overflow-hidden group">
