@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export function Banner() {
     return (
-        <section className="w-full bg-[url('/src/assets/img/Banner.svg')] text-white md:bg-center bg-[position:75%_center] bg-no-repeat bg-cover flex flex-col justify-center md:items-start items-center p-32">
+        <section className="w-full bg-[url('public/Banner.svg')] text-white md:bg-center bg-[position:75%_center] bg-no-repeat bg-cover flex flex-col justify-center md:items-start items-center p-32">
 
                 <h1 className="text-5xl md:w-[60vw] w-[80vw] font-medium leading-none">Publique seu <br />livro conosco</h1>
 
