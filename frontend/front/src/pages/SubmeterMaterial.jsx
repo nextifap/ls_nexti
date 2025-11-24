@@ -11,11 +11,7 @@ import ScrollToTop from "../features/ScrollTop";
 function SubmeterMaterial () {
     return (
         <div className="container-sobrenos">
-            <ScrollToTop/>
-            <div className="topo">
-                <Header />
-                <Navigation />
-            </div>
+            <ScrollToTop/> 
             <Header />
             <Navigation />
             <TitlePage title={"Submeter material"} />
