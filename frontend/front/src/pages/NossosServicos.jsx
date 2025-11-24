@@ -11,11 +11,6 @@ function NossosServicos () {
     return (
         <>
             <ScrollToTop/>
-
-            <div className="topo">
-                <Header />
-                <Navigation />
-            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Conheça nossos serviços"} />
