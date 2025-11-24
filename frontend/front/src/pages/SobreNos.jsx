@@ -3,8 +3,6 @@ import { Header } from "../components/header";
 import { Navigation } from "../components/navigation";
 import { TitlePage } from "../components/title-page";
 
-import '../styles/SobreNos.css'
-
 import SobreNósIMG from '../assets/img/sobre-nos.svg'
 
 import ScrollToTop from "../features/ScrollTop";
