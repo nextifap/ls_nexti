@@ -18,11 +18,7 @@ function Home () {
     return (
         <div>
           <ScrollToTop/>
-            
-            <div className="topo">
-                <Header />
-                <Navigation />
-            </div>
+          
             <Header />
             <Navigation />
             

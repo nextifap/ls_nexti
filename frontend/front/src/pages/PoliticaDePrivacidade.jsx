@@ -12,10 +12,8 @@ function PoliticaDePrivacidade () {
     return (
         <>
             <ScrollToTop />
-            <div className="topo">
-                <Header />
-                <Navigation />
-            </div>
+            <Header />
+            <Navigation />
             <TitlePage title="Política de Privacidade" />
             <section className="container-politica">
                 <div className="aviso">

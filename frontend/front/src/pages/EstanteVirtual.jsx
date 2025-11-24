@@ -11,10 +11,8 @@ function EstanteVirtual() {
         <>
             <ScrollToTop />
             <div className="bg-[#F4F2EF] min-h-screen">
-                <div className="topo">
-                    <Header />
-                    <Navigation />
-                </div>
+                <Header />
+                <Navigation />
 
                 <TitlePage title={"Estante Virtual"} />
 
