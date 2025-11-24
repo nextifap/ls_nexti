@@ -13,10 +13,6 @@ function SobreNos () {
     return (
         <div className="container-sobrenos">
             <ScrollToTop/>
-            <div className="topo">
-                <Header />
-                <Navigation />
-            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Sobre nós"} />

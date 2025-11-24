@@ -16,10 +16,6 @@ function PerguntasFrequentes () {
     return (
         <div>
             <ScrollToTop/>
-            <div className="topo">
-                <Header />
-                <Navigation />
-            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Perguntas Frequentes"} />

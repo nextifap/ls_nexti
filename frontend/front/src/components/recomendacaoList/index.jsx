@@ -50,9 +50,9 @@ export function RecomendacaoList() {
     return(
         <section className="bg-[#E9E9E9] py-16">
             <div className="w-full flex flex-col items-center">{/*header-recomendacoes*/}
-                <h3 className="text-[#213E60] text-3xl text-center">QUEM CONHECE <span>RECOMENDA</span></h3>
+                <h3 className="text-[#213E60] text-4xl text-center">QUEM CONHECE <span>RECOMENDA</span></h3>
 
-                <p className="text-center my-5 md:w-[60%] w-full text-lg">Quem passa pela Learn Skills vive uma jornada de aprendizado transformadora. Nossos alunos e parceiros reconhecem o cuidado, a dedicação e a qualidade de tudo o que oferecemos.</p>
+                <p className="text-center my-5 md:w-[60%] w-[85%] md:text-2xl text-xl">Quem passa pela Learn Skills vive uma jornada de aprendizado transformadora. Nossos alunos e parceiros reconhecem a dedicação e a qualidade em nossos serviços.</p>
             </div>
 
             <div
